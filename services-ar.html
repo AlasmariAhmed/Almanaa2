@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>المانع | المعمار الهيكلي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { black: '#013f34' } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #ffffff;
+            color: #013f34;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-bg {
+            background-size: 25px 25px;
+            background-image: linear-gradient(to left, #f3f4f6 1px, transparent 1px), linear-gradient(to bottom, #f3f4f6 1px, transparent 1px);
+        }
+
+        @media (min-width: 768px) {
+            .grid-bg {
+                background-size: 50px 50px;
+            }
+        }
+
+        .wireframe-border {
+            border: 1px solid #d1d5db;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body class="grid-bg selection:bg-black selection:text-white md:pb-24 overflow-x-hidden">
+    <div
+        class="w-full max-w-[1440px] mx-auto wireframe-border min-h-screen bg-white md:mt-12 md:mb-12 shadow-2xl flex flex-col">
+        <nav class="border-b border-gray-300 flex flex-col md:flex-row text-xs md:text-sm shrink-0">
+            <div
+                class="md:w-1/4 p-4 sm:p-6 md:p-8 font-black text-xl sm:text-2xl md:text-4xl tracking-tight border-b md:border-b-0 md:border-l border-gray-300 flex items-center justify-center md:justify-start gap-4">
+                <a href="index-ar.html" class="flex items-center gap-3">
+                    <img src="../logo.jpg" alt="Almanaa Logo" class="h-8 md:h-10 w-auto shadow-sm">
+                    <span>مكتب المانع.</span>
+                </a>
+            </div>
+            <div class="md:w-3/4 flex flex-wrap sm:flex-nowrap w-full border-b md:border-b-0 border-gray-300">
+                <a href="about-ar.html"
+                    class="w-1/2 sm:w-1/4 p-6 sm:p-8 font-bold text-center hover:bg-black hover:text-white uppercase transition-none border-l border-b sm:border-b-0 border-gray-300">الشركة</a>
+                <a href="services-ar.html"
+                    class="w-1/2 sm:w-1/4 p-6 sm:p-8 font-bold text-center hover:bg-black hover:text-white uppercase transition-none sm:border-l border-b sm:border-b-0 border-gray-300">الخبرات</a>
+                <a href="contact-ar.html"
+                    class="w-1/2 sm:w-1/4 p-6 sm:p-8 font-bold text-center hover:bg-black hover:text-white uppercase transition-none border-l border-gray-300">تواصل</a>
+                <a href="index.html"
+                    class="w-1/2 sm:w-1/4 p-6 sm:p-8 font-bold text-center hover:bg-black hover:text-white uppercase transition-none bg-gray-100 flex items-center justify-center gap-2 shrink-0"
+                    dir="ltr">
+                    <span class="mono text-[10px] opacity-50 hidden sm:inline">CMD:</span> EN
+                </a>
+            </div>
+        </nav>
+        <header class="border-b border-gray-300 flex flex-col md:flex-row text-center md:text-right">
+            <div class="w-full p-6 sm:p-8 md:p-24 flex flex-col justify-center">
+                <span
+                    class="mono text-[8px] md:text-[10px] uppercase border border-gray-300 p-2 inline-block w-max mb-8 md:mb-12 font-bold mx-auto md:mx-0"
+                    dir="ltr">Function: Methods</span>
+                <h1
+                    class="text-4xl sm:text-5xl md:text-[7rem] font-bold uppercase leading-[1] md:leading-[0.9] tracking-tight mix-blend-multiply break-words">
+                    عمليات<br>منهجية.</h1>
+            </div>
+        </header>
+        <section>
+            <div
+                class="border-b border-gray-300 flex flex-col md:flex-row hover:bg-black hover:text-white group transition-none cursor-crosshair">
+                <div
+                    class="p-6 md:w-32 md:p-8 border-b md:border-b-0 md:border-l border-gray-300 mono text-xl md:text-3xl opacity-40 md:opacity-30 flex items-center md:justify-center group-hover:border-white">
+                    01</div>
+                <div
+                    class="p-6 sm:p-8 md:p-16 w-full flex flex-col xl:flex-row items-start lg:items-center justify-between gap-6 md:gap-12">
+                    <h2 class="text-2xl md:text-4xl font-bold uppercase flex-shrink-0">استحواذ الشركات</h2>
+                    <p class="font-bold opacity-60 text-base md:text-xl max-w-lg">السيطرة التشغيلية الكاملة على الصفقات
+                        الإقليمية عالية القيمة.</p>
+                </div>
+            </div>
+            <div
+                class="border-b border-gray-300 flex flex-col md:flex-row hover:bg-black hover:text-white group transition-none cursor-crosshair">
+                <div
+                    class="p-6 md:w-32 md:p-8 border-b md:border-b-0 md:border-l border-gray-300 mono text-xl md:text-3xl opacity-40 md:opacity-30 flex items-center md:justify-center group-hover:border-white">
+                    02</div>
+                <div
+                    class="p-6 sm:p-8 md:p-16 w-full flex flex-col xl:flex-row items-start lg:items-center justify-between gap-6 md:gap-12">
+                    <h2 class="text-2xl md:text-4xl font-bold uppercase flex-shrink-0">دفاع التحكيم</h2>
+                    <p class="font-bold opacity-60 text-base md:text-xl max-w-lg">تخفيف المخاطر الخوارزمي وهياكل التحكيم
+                        التجاري الصارمة.</p>
+                </div>
+            </div>
+            <div
+                class="border-b border-gray-300 flex flex-col md:flex-row hover:bg-black hover:text-white group transition-none cursor-crosshair">
+                <div
+                    class="p-6 md:w-32 md:p-8 border-b md:border-b-0 md:border-l border-gray-300 mono text-xl md:text-3xl opacity-40 md:opacity-30 flex items-center md:justify-center group-hover:border-white">
+                    03</div>
+                <div
+                    class="p-6 sm:p-8 md:p-16 w-full flex flex-col xl:flex-row items-start lg:items-center justify-between gap-6 md:gap-12">
+                    <h2 class="text-2xl md:text-4xl font-bold uppercase flex-shrink-0">عقارات صناعية</h2>
+                    <p class="font-bold opacity-60 text-base md:text-xl max-w-lg">الاستحواذات السيادية ورسم خرائط
+                        التطوير الكبرى.</p>
+                </div>
+            </div>
+        </section>
+        <div class="w-full h-64 md:h-[60vh] border-b border-gray-300 relative overflow-hidden group">
+            <img src="Home.png"
+                class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 mix-blend-color opacity-80 bg-[#013f34]"></div>
+        </div>
+        <footer
+            class="mt-auto p-6 md:p-12 flex flex-col sm:flex-row justify-between items-center mono text-[10px] md:text-xs uppercase bg-[#013f34] text-white gap-4"
+            dir="ltr">
+            <span class="text-center sm:text-left">Runtime Env: 2026 // Auth: Almanaa Firm</span>
+            <span class="bg-white text-black px-3 py-1 font-bold">END OF LINE.</span>
+        </footer>
+    </div>
+</body>
+
+</html>
